@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas 3D con efecto flip - MagtimusPro</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!--HTML CODE-->
+    <h2 data-text="MODELOS">MODELOS</h2>
+
+    <!--CSS CODE-->
+    <style>
+        h2 {
+            height: 400px;
+            top:20px;
+            left:30px;
+            position: relative;
+            font-size: 4rem;
+            font-family: sans-serif;
+            -webkit-text-stroke: 0.3vw #383d52;
+            text-transform: uppercase;
+        }
+
+            h2::before {
+                content: attr(data-text);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                color: #ffffff;
+                -webkit-text-stroke: 0vw #383d52;
+                border-right: 2px solid #ffffff;
+                overflow: hidden;
+                animation: animate 7s linear infinite;
+                -webkit-animation: animate 7s linear infinite;
+            }
+
+        @keyframes animate {
+            0% {
+                width: 0;
+            }
+
+            70% {
+                width: 80%;
+            }
+        }
+    </style>
+    <main>
+
+        <div class="container__card">
+
+            <div class="card__father">
+                <div class="card">
+                    <div class="card__front" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/97/Lamborghini_Aventador_LP700-4_Orange.jpg); ">
+                        <div class="bg"></div>
+                        <div class="body__card_front">
+                            <h1>DEPORTIVOS</h1>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                        <div class="body__card_back">
+                            <h1>Windows 10</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab quas recusandae voluptatum aliquid tempore animi corporis voluptas. Tempore neque iure necessitatibus voluptas nesciunt animi dolores incidunt delectus sapiente illum.</p>
+                            <a href="C:\Users\vmarc\Desktop\index.html"><input type="button" value="Ver modelos" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__father">
+                <div class="card">
+                    <div class="card__front" style="background-image: url(https://cdn.motor1.com/images/mgl/kpvbx/s1/4x3/lanzamiento-toyota-hilux-2022.webp);">
+                        <div class="bg"></div>
+                        <div class="body__card_front">
+                            <h1>PICK-UPS</h1>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                        <div class="body__card_back">
+                            <h1>MAC OS X Capitan</h1>
+                            <p>ecessitatibus voluptas nesciunt animi dolores incidunt delectus sapiente illum.</p>
+                            <input type="button" value="Leer Más">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__father">
+                <div class="card">
+                    <div class="card__front" style="background-image: url(https://http2.mlstatic.com/D_NQ_NP_734234-MLM52011475626_102022-W.jpg);">
+                        <div class="bg"></div>
+                        <div class="body__card_front">
+                            <h1>CAMIONETAS</h1>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                        <div class="body__card_back">
+                            <h1>UBUNTU</h1>
+                            <p>sapiente illum.</p>
+                            <input type="button" value="Leer Más">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
